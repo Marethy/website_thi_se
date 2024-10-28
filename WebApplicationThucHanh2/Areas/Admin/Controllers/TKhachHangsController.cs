@@ -11,23 +11,23 @@ using WebApplicationThucHanh2.Models;
 namespace WebApplicationThucHanh2.Areas.Admin.Controllers
 {
     [Area("Admin")]
-
-    public class THangSxesController : Controller
+    public class TKhachHangsController : Controller
     {
         private readonly QLBanVaLiDbContext _context;
 
-        public THangSxesController(QLBanVaLiDbContext context)
+        public TKhachHangsController(QLBanVaLiDbContext context)
         {
             _context = context;
         }
 
-        // GET: THangSxes
+        // GET: Admin/TKhachHangs
         public async Task<IActionResult> Index()
         {
-            return View(await _context.THangSxes.ToListAsync());
+            var qLBanVaLiDbContext = _context.TKhachHangs.Include(t => t.UsernameNavigation);
+            return View(await qLBanVaLiDbContext.ToListAsync());
         }
 
-        // GET: THangSxes/Details/5
+        // GET: Admin/TKhachHangs/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -35,39 +35,42 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var tHangSx = await _context.THangSxes
-                .FirstOrDefaultAsync(m => m.MaHangSx == id);
-            if (tHangSx == null)
+            var tKhachHang = await _context.TKhachHangs
+                .Include(t => t.UsernameNavigation)
+                .FirstOrDefaultAsync(m => m.MaKhanhHang == id);
+            if (tKhachHang == null)
             {
                 return NotFound();
             }
 
-            return View(tHangSx);
+            return View(tKhachHang);
         }
 
-        // GET: THangSxes/Create
+        // GET: Admin/TKhachHangs/Create
         public IActionResult Create()
         {
+            ViewData["Username"] = new SelectList(_context.TUsers, "Username", "Username");
             return View();
         }
 
-        // POST: THangSxes/Create
+        // POST: Admin/TKhachHangs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaHangSx,HangSx,MaNuocThuongHieu")] THangSx tHangSx)
+        public async Task<IActionResult> Create([Bind("MaKhanhHang,Username,TenKhachHang,NgaySinh,SoDienThoai,DiaChi,LoaiKhachHang,AnhDaiDien,GhiChu")] TKhachHang tKhachHang)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(tHangSx);
+                _context.Add(tKhachHang);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(tHangSx);
+            ViewData["Username"] = new SelectList(_context.TUsers, "Username", "Username", tKhachHang.Username);
+            return View(tKhachHang);
         }
 
-        // GET: THangSxes/Edit/5
+        // GET: Admin/TKhachHangs/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -75,22 +78,23 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var tHangSx = await _context.THangSxes.FindAsync(id);
-            if (tHangSx == null)
+            var tKhachHang = await _context.TKhachHangs.FindAsync(id);
+            if (tKhachHang == null)
             {
                 return NotFound();
             }
-            return View(tHangSx);
+            ViewData["Username"] = new SelectList(_context.TUsers, "Username", "Username", tKhachHang.Username);
+            return View(tKhachHang);
         }
 
-        // POST: THangSxes/Edit/5
+        // POST: Admin/TKhachHangs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("MaHangSx,HangSx,MaNuocThuongHieu")] THangSx tHangSx)
+        public async Task<IActionResult> Edit(string id, [Bind("MaKhanhHang,Username,TenKhachHang,NgaySinh,SoDienThoai,DiaChi,LoaiKhachHang,AnhDaiDien,GhiChu")] TKhachHang tKhachHang)
         {
-            if (id != tHangSx.MaHangSx)
+            if (id != tKhachHang.MaKhanhHang)
             {
                 return NotFound();
             }
@@ -99,12 +103,12 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
             {
                 try
                 {
-                    _context.Update(tHangSx);
+                    _context.Update(tKhachHang);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!THangSxExists(tHangSx.MaHangSx))
+                    if (!TKhachHangExists(tKhachHang.MaKhanhHang))
                     {
                         return NotFound();
                     }
@@ -115,10 +119,11 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(tHangSx);
+            ViewData["Username"] = new SelectList(_context.TUsers, "Username", "Username", tKhachHang.Username);
+            return View(tKhachHang);
         }
 
-        // GET: THangSxes/Delete/5
+        // GET: Admin/TKhachHangs/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -126,34 +131,35 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var tHangSx = await _context.THangSxes
-                .FirstOrDefaultAsync(m => m.MaHangSx == id);
-            if (tHangSx == null)
+            var tKhachHang = await _context.TKhachHangs
+                .Include(t => t.UsernameNavigation)
+                .FirstOrDefaultAsync(m => m.MaKhanhHang == id);
+            if (tKhachHang == null)
             {
                 return NotFound();
             }
 
-            return View(tHangSx);
+            return View(tKhachHang);
         }
 
-        // POST: THangSxes/Delete/5
+        // POST: Admin/TKhachHangs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var tHangSx = await _context.THangSxes.FindAsync(id);
-            if (tHangSx != null)
+            var tKhachHang = await _context.TKhachHangs.FindAsync(id);
+            if (tKhachHang != null)
             {
-                _context.THangSxes.Remove(tHangSx);
+                _context.TKhachHangs.Remove(tKhachHang);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool THangSxExists(string id)
+        private bool TKhachHangExists(string id)
         {
-            return _context.THangSxes.Any(e => e.MaHangSx == id);
+            return _context.TKhachHangs.Any(e => e.MaKhanhHang == id);
         }
     }
 }

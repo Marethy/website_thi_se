@@ -256,3 +256,4 @@ C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\bin\Deb
 C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\obj\Debug\net8.0\WebApplicationThucHanh2.sourcelink.json

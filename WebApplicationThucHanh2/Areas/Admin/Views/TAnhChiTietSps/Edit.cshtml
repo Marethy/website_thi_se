@@ -1,4 +1,4 @@
-﻿@model WebApplicationThucHanh2.Models.TAnhSp
+﻿@model WebApplicationThucHanh2.Models.TAnhChiTietSp
 
 @{
     ViewData["Title"] = "Edit";
@@ -7,13 +7,13 @@
 
 <h1>Edit</h1>
 
-<h4>TAnhSp</h4>
+<h4>TAnhChiTietSp</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="MaSp" />
+            <input type="hidden" asp-for="MaChiTietSp" />
             <input type="hidden" asp-for="TenFileAnh" />
             <div class="form-group">
                 <label asp-for="ViTri" class="control-label"></label>

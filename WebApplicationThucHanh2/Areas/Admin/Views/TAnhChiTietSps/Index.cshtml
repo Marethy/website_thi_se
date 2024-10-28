@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebApplicationThucHanh2.Models.TAnhSp>
+﻿@model IEnumerable<WebApplicationThucHanh2.Models.TAnhChiTietSp>
 
 @{
     ViewData["Title"] = "Index";
@@ -17,7 +17,7 @@
                 @Html.DisplayNameFor(model => model.ViTri)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MaSpNavigation)
+                @Html.DisplayNameFor(model => model.MaChiTietSpNavigation)
             </th>
             <th></th>
         </tr>
@@ -29,7 +29,7 @@
                 @Html.DisplayFor(modelItem => item.ViTri)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.MaSpNavigation.MaSp)
+                @Html.DisplayFor(modelItem => item.MaChiTietSpNavigation.MaChiTietSp)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

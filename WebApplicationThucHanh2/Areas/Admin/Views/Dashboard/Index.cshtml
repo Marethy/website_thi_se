@@ -1,67 +1,34 @@
 ﻿@{
-    ViewData["Title"] = "Admin Dashboard";
-    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml"; // Sử dụng layout admin riêng
+    ViewData["Title"] = "Trang chủ quản trị";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
 }
-<!-- HTML -->
-<div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav">
-        <li class="nav-item nav-item-home">
-            <a class="nav-link" asp-area="Admin" asp-controller="TAnhSps" asp-action="Index">Sản phẩm</a>
-        </li>
-        <li class="nav-item nav-item-home">
-            <a class="nav-link" asp-area="Admin" asp-controller="TDanhMucSps" asp-action="Index">Danh mục sản phẩm</a>
-        </li>
-        <li class="nav-item">
-            <button class="btn btn-primary">Nút Bấm</button>
-        </li>
-    </ul>
+<body>
+    <link rel="stylesheet" href="~/Layout/css/site.css" asp-append-version="true" />
+<div class="container">
+    <h1 class="mt-4">Chào mừng đến với Trang quản trị</h1>
+    <p>Đây là trang chính của hệ thống quản trị. Tại đây, bạn có thể quản lý các sản phẩm và danh mục sản phẩm.</p>
+
+    <p>
+        <a class="btn btn-success" asp-area="Admin" asp-controller="TDanhMucSps" asp-action="Create">Tạo sản phẩm mới</a>
+            <a class="nav-head" asp-area="Admin" asp-controller="TDanhMucSps" asp-action="Index">Danh mucj sahc pha</a>
+
+    </p>
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Danh mục</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+     
+    </table>
 </div>
-
-
-
-    <div class="container-fluid mt-4">
-    <h1 class="text-center mb-4">Admin Dashboard</h1>
-
-    <!-- Row of summary cards -->
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card bg-primary text-white">
-                <div class="card-body">
-                    <h5 class="card-title">Total Sales</h5>
-                    <p class="card-text display-4">$15,320</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card bg-success text-white">
-                <div class="card-body">
-                    <h5 class="card-title">New Orders</h5>
-                    <p class="card-text display-4">89</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card bg-warning text-white">
-                <div class="card-body">
-                    <h5 class="card-title">Pending Deliveries</h5>
-                    <p class="card-text display-4">42</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card bg-danger text-white">
-                <div class="card-body">
-                    <h5 class="card-title">Customer Queries</h5>
-                    <p class="card-text display-4">15</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+</body>
 @section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        // JavaScript for charts
+        // JavaScript code for this page
+        console.log("Page Scripts Loaded");
     </script>
 }

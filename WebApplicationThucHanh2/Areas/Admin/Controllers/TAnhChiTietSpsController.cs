@@ -11,23 +11,23 @@ using WebApplicationThucHanh2.Models;
 namespace WebApplicationThucHanh2.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class TAnhSpsController : Controller
+    public class TAnhChiTietSpsController : Controller
     {
         private readonly QLBanVaLiDbContext _context;
 
-        public TAnhSpsController(QLBanVaLiDbContext context)
+        public TAnhChiTietSpsController(QLBanVaLiDbContext context)
         {
             _context = context;
         }
 
-        // GET: Admin/TAnhSps
+        // GET: Admin/TAnhChiTietSps
         public async Task<IActionResult> Index()
         {
-            var qLBanVaLiDbContext = _context.TAnhSps.Include(t => t.MaSpNavigation);
+            var qLBanVaLiDbContext = _context.TAnhChiTietSps.Include(t => t.MaChiTietSpNavigation);
             return View(await qLBanVaLiDbContext.ToListAsync());
         }
 
-        // GET: Admin/TAnhSps/Details/5
+        // GET: Admin/TAnhChiTietSps/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -35,42 +35,42 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var tAnhSp = await _context.TAnhSps
-                .Include(t => t.MaSpNavigation)
-                .FirstOrDefaultAsync(m => m.MaSp == id);
-            if (tAnhSp == null)
+            var tAnhChiTietSp = await _context.TAnhChiTietSps
+                .Include(t => t.MaChiTietSpNavigation)
+                .FirstOrDefaultAsync(m => m.MaChiTietSp == id);
+            if (tAnhChiTietSp == null)
             {
                 return NotFound();
             }
 
-            return View(tAnhSp);
+            return View(tAnhChiTietSp);
         }
 
-        // GET: Admin/TAnhSps/Create
+        // GET: Admin/TAnhChiTietSps/Create
         public IActionResult Create()
         {
-            ViewData["MaSp"] = new SelectList(_context.TDanhMucSps, "MaSp", "MaSp");
+            ViewData["MaChiTietSp"] = new SelectList(_context.TChiTietSanPhams, "MaChiTietSp", "MaChiTietSp");
             return View();
         }
 
-        // POST: Admin/TAnhSps/Create
+        // POST: Admin/TAnhChiTietSps/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaSp,TenFileAnh,ViTri")] TAnhSp tAnhSp)
+        public async Task<IActionResult> Create([Bind("MaChiTietSp,TenFileAnh,ViTri")] TAnhChiTietSp tAnhChiTietSp)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(tAnhSp);
+                _context.Add(tAnhChiTietSp);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaSp"] = new SelectList(_context.TDanhMucSps, "MaSp", "MaSp", tAnhSp.MaSp);
-            return View(tAnhSp);
+            ViewData["MaChiTietSp"] = new SelectList(_context.TChiTietSanPhams, "MaChiTietSp", "MaChiTietSp", tAnhChiTietSp.MaChiTietSp);
+            return View(tAnhChiTietSp);
         }
 
-        // GET: Admin/TAnhSps/Edit/5
+        // GET: Admin/TAnhChiTietSps/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -78,23 +78,23 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var tAnhSp = await _context.TAnhSps.FindAsync(id);
-            if (tAnhSp == null)
+            var tAnhChiTietSp = await _context.TAnhChiTietSps.FindAsync(id);
+            if (tAnhChiTietSp == null)
             {
                 return NotFound();
             }
-            ViewData["MaSp"] = new SelectList(_context.TDanhMucSps, "MaSp", "MaSp", tAnhSp.MaSp);
-            return View(tAnhSp);
+            ViewData["MaChiTietSp"] = new SelectList(_context.TChiTietSanPhams, "MaChiTietSp", "MaChiTietSp", tAnhChiTietSp.MaChiTietSp);
+            return View(tAnhChiTietSp);
         }
 
-        // POST: Admin/TAnhSps/Edit/5
+        // POST: Admin/TAnhChiTietSps/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("MaSp,TenFileAnh,ViTri")] TAnhSp tAnhSp)
+        public async Task<IActionResult> Edit(string id, [Bind("MaChiTietSp,TenFileAnh,ViTri")] TAnhChiTietSp tAnhChiTietSp)
         {
-            if (id != tAnhSp.MaSp)
+            if (id != tAnhChiTietSp.MaChiTietSp)
             {
                 return NotFound();
             }
@@ -103,12 +103,12 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
             {
                 try
                 {
-                    _context.Update(tAnhSp);
+                    _context.Update(tAnhChiTietSp);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TAnhSpExists(tAnhSp.MaSp))
+                    if (!TAnhChiTietSpExists(tAnhChiTietSp.MaChiTietSp))
                     {
                         return NotFound();
                     }
@@ -119,11 +119,11 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaSp"] = new SelectList(_context.TDanhMucSps, "MaSp", "MaSp", tAnhSp.MaSp);
-            return View(tAnhSp);
+            ViewData["MaChiTietSp"] = new SelectList(_context.TChiTietSanPhams, "MaChiTietSp", "MaChiTietSp", tAnhChiTietSp.MaChiTietSp);
+            return View(tAnhChiTietSp);
         }
 
-        // GET: Admin/TAnhSps/Delete/5
+        // GET: Admin/TAnhChiTietSps/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -131,35 +131,35 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var tAnhSp = await _context.TAnhSps
-                .Include(t => t.MaSpNavigation)
-                .FirstOrDefaultAsync(m => m.MaSp == id);
-            if (tAnhSp == null)
+            var tAnhChiTietSp = await _context.TAnhChiTietSps
+                .Include(t => t.MaChiTietSpNavigation)
+                .FirstOrDefaultAsync(m => m.MaChiTietSp == id);
+            if (tAnhChiTietSp == null)
             {
                 return NotFound();
             }
 
-            return View(tAnhSp);
+            return View(tAnhChiTietSp);
         }
 
-        // POST: Admin/TAnhSps/Delete/5
+        // POST: Admin/TAnhChiTietSps/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var tAnhSp = await _context.TAnhSps.FindAsync(id);
-            if (tAnhSp != null)
+            var tAnhChiTietSp = await _context.TAnhChiTietSps.FindAsync(id);
+            if (tAnhChiTietSp != null)
             {
-                _context.TAnhSps.Remove(tAnhSp);
+                _context.TAnhChiTietSps.Remove(tAnhChiTietSp);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool TAnhSpExists(string id)
+        private bool TAnhChiTietSpExists(string id)
         {
-            return _context.TAnhSps.Any(e => e.MaSp == id);
+            return _context.TAnhChiTietSps.Any(e => e.MaChiTietSp == id);
         }
     }
 }
