@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebApplicationThucHanh2.Data;
 using WebApplicationThucHanh2.Models;
 
 namespace WebApplicationThucHanh2.Controllers
 {
     public class HomeController : Controller
     {
+        QLBanVaLiDbContext _context = new QLBanVaLiDbContext();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,7 +17,8 @@ namespace WebApplicationThucHanh2.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var ListProduct = _context.TDanhMucSps.ToList();
+            return View(ListProduct);
         }
 
         public IActionResult Privacy()

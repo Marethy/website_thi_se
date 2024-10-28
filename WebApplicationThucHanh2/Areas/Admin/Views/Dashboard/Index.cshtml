@@ -1,34 +1,6 @@
 ﻿@{
-    ViewData["Title"] = "Trang chủ quản trị";
-    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
-}
-<body>
-    <link rel="stylesheet" href="~/Layout/css/site.css" asp-append-version="true" />
-<div class="container">
-    <h1 class="mt-4">Chào mừng đến với Trang quản trị</h1>
-    <p>Đây là trang chính của hệ thống quản trị. Tại đây, bạn có thể quản lý các sản phẩm và danh mục sản phẩm.</p>
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+};
 
-    <p>
-        <a class="btn btn-success" asp-area="Admin" asp-controller="TDanhMucSps" asp-action="Create">Tạo sản phẩm mới</a>
-            <a class="nav-head" asp-area="Admin" asp-controller="TDanhMucSps" asp-action="Index">Danh mucj sahc pha</a>
-
-    </p>
-    <table class="table table-striped mt-4">
-        <thead>
-            <tr>
-                <th>Tên sản phẩm</th>
-                <th>Giá</th>
-                <th>Danh mục</th>
-                <th>Thao tác</th>
-            </tr>
-        </thead>
-     
-    </table>
-</div>
-</body>
-@section Scripts {
-    <script>
-        // JavaScript code for this page
-        console.log("Page Scripts Loaded");
-    </script>
-}
+      <h1>Dashboard</h1>
