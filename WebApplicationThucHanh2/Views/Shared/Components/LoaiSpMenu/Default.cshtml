@@ -1,0 +1,16 @@
+﻿@model IEnumerable<WebApplicationThucHanh2.Models.TLoaiSp>
+<div class="col-lg-3">
+    <div class="hero__categories">
+        <div class="hero__categories__all">
+            <i class="fa fa-bars"></i>
+            <span>ĐÂY LÀ LOẠI SẢN PHẢM </span>
+        </div>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li><a href="#">@item.Loai</a></li>
+            })
+           
+        </ul>
+    </div>
+</div>

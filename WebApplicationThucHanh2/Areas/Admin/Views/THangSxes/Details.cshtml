@@ -1,0 +1,31 @@
+﻿@model WebApplicationThucHanh2.Models.THangSx
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml"; // Sử dụng layout admin riêng
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>THangSx</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HangSx)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HangSx)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaNuocThuongHieu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaNuocThuongHieu)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.MaHangSx">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

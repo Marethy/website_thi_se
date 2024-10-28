@@ -1,0 +1,235 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplicationThucHanh2
+build_property.RootNamespace = WebApplicationThucHanh2
+build_property.ProjectDir = C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/Shared/AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEFkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TAnhSps/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEFuaFNwc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TAnhSps/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEFuaFNwc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TAnhSps/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEFuaFNwc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TAnhSps/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEFuaFNwc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TAnhSps/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEFuaFNwc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TDanhMucSps/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVERhbmhNdWNTcHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TDanhMucSps/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVERhbmhNdWNTcHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TDanhMucSps/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVERhbmhNdWNTcHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TDanhMucSps/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVERhbmhNdWNTcHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/TDanhMucSps/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVERhbmhNdWNTcHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/THangSxes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEhhbmdTeGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/THangSxes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEhhbmdTeGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/THangSxes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEhhbmdTeGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/THangSxes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEhhbmdTeGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Areas/Admin/Views/THangSxes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVEhhbmdTeGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/Shared/Components/LoaiSpMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTG9haVNwTWVudVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/Shared/_LayoutOgani.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRPZ2FuaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TAnhChiTietSps/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEFuaENoaVRpZXRTcHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TAnhChiTietSps/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEFuaENoaVRpZXRTcHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TAnhChiTietSps/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEFuaENoaVRpZXRTcHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TAnhChiTietSps/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEFuaENoaVRpZXRTcHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TAnhChiTietSps/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEFuaENoaVRpZXRTcHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TChatLieux/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVENoYXRMaWV1eFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TChatLieux/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVENoYXRMaWV1eFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TChatLieux/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVENoYXRMaWV1eFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TChatLieux/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVENoYXRMaWV1eFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TChatLieux/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVENoYXRMaWV1eFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TDanhMucSps/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVERhbmhNdWNTcHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TDanhMucSps/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVERhbmhNdWNTcHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TDanhMucSps/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVERhbmhNdWNTcHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TDanhMucSps/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVERhbmhNdWNTcHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TDanhMucSps/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVERhbmhNdWNTcHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TKhachHangs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEtoYWNoSGFuZ3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TKhachHangs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEtoYWNoSGFuZ3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TKhachHangs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEtoYWNoSGFuZ3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TKhachHangs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEtoYWNoSGFuZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TKhachHangs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEtoYWNoSGFuZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TUsers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVFVzZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TUsers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVFVzZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TUsers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVFVzZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TUsers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVFVzZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/TUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVFVzZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/source/repos/WebApplicationThucHanh2/WebApplicationThucHanh2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-t34m55p3h4
