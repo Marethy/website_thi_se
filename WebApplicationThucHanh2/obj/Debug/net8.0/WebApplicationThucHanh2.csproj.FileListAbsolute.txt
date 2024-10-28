@@ -257,3 +257,6 @@ C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\obj\Deb
 C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\obj\Debug\net8.0\WebApplicationThucHanh2.pdb
 C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\obj\Debug\net8.0\WebApplicationThucHanh2.genruntimeconfig.cache
 C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\obj\Debug\net8.0\ref\WebApplicationThucHanh2.dll
+C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\bin\Debug\net8.0\X.PagedList.dll
+C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+C:\Users\PC\source\repos\WebApplicationThucHanh2\WebApplicationThucHanh2\obj\Debug\net8.0\WebApplicationThucHanh2.MvcApplicationPartsAssemblyInfo.cs

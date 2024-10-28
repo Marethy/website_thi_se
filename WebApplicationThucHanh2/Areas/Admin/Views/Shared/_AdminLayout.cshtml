@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, WebApplicationThucHanh2   
+@using Microsoft.AspNetCore.Mvc.TagHelpers.Cache
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -18,7 +20,9 @@
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../AdminLayout/assets/images/favicon.ico" />
 </head>
+
 <body>
+
     <div class="container-scroller">
         <!-- partial:../../partials/_navbar.html -->
         <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -190,21 +194,18 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">
-                            <span class="menu-title">Dashboard</span>
-                            <i class="mdi mdi-home menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                            <span class="menu-title">Basic UI Elements</span>
+                            <span class="menu-title">Quản lý sản phẩm</span>
                             <i class="menu-arrow"></i>
                             <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-                        </a>
+                        </a>    
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="ProductCatalog">Danh mục sản phẩm</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="/.">Trở lại trang đăng nhập</a></li>
+
                             </ul>
                         </div>
                     </li>
@@ -248,23 +249,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item sidebar-actions">
-                        <span class="nav-link">
-                            <div class="border-bottom">
-                                <h6 class="font-weight-normal mb-3">Projects</h6>
-                            </div>
-                            <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
-                            <div class="mt-4">
-                                <div class="border-bottom">
-                                    <p class="text-secondary">Categories</p>
-                                </div>
-                                <ul class="gradient-bullet-list mt-4">
-                                    <li>Free</li>
-                                    <li>Pro</li>
-                                </ul>
-                            </div>
-                        </span>
-                    </li>
+  
                 </ul>
             </nav>
             <!-- partial -->
@@ -276,8 +261,7 @@
                 <!-- partial:../../partials/_footer.html -->
                 <footer class="footer">
                     <div class="container-fluid d-flex justify-content-between">
-                        <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
-                        <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
+                        <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © Tran Thien Khiem 2024</span>
                     </div>
                 </footer>
                 <!-- partial -->
@@ -299,5 +283,7 @@
     <!-- endinject -->
     <!-- Custom js for this page -->
     <!-- End custom js for this page -->
+    @RenderSection("Scripts", required: false) <!-- Render section Scripts ở đây -->
+
 </body>
 </html>

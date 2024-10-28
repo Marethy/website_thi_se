@@ -7,6 +7,7 @@ namespace WebApplicationThucHanh2.Repository
         TLoaiSp Update(TLoaiSp loaiSp);
         TLoaiSp Delete(int id);
         TLoaiSp GetLoaiSp(int id);  
-        IEnumerable<TLoaiSp> GetLoaiSps();
+
+        IEnumerable<TLoaiSp> GetAllLoaiSp();
     }
 }

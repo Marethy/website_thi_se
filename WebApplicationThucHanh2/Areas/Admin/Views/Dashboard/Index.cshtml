@@ -1,6 +1,22 @@
 ﻿@{
-    ViewData["Title"] = "Dashboard";
-    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
-};
+    ViewData["Title"] = "Dashboard"; // Tiêu đề trang
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml"; // Đường dẫn đến layout
+}
 
-      <h1>Dashboard</h1>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+
+<div class="container">
+    <h1>Dashboard</h1> // Tiêu đề chính của trang dashboard
+    <a asp-area ="Admin" asp-controller="Account" asp-action="Logout">Đăng xuất</a>
+    <a asp-area="Admin" asp-controller="TLoaiSps" asp-action="Index">Danh sách sản phẩm</a>
+    <nav>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="AddProduct">Thêm sản phẩm</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="ProductCatalog">Danh mục sản phẩm</a>
+            </li>
+        </ul>
+    </nav>
+</div>
