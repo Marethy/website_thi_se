@@ -45,7 +45,8 @@ namespace WebApplicationThucHanh2.Areas.Admin.Controllers
 
             return View(tLoaiSp);
         }
-
+        [HttpPost]
+        [Microsoft.AspNetCore.Mvc.Route("Admin/TLoaiSps/Create")]
         // GET: Admin/TLoaiSps/Create
         public IActionResult Create()
         {

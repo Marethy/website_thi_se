@@ -39,7 +39,7 @@ app.MapControllerRoute(
 app.MapAreaControllerRoute(
     name: "Admin",
     areaName: "Admin", // Tên khu vực Admin
-    pattern: "Admin/{controller}/{action=Index}/{id?}");
+    pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}");
 
 
 app.Run();

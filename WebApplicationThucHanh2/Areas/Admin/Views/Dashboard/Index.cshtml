@@ -8,7 +8,10 @@
 <div class="container">
     <h1>Dashboard</h1> // Tiêu đề chính của trang dashboard
     <a asp-area ="Admin" asp-controller="Account" asp-action="Logout">Đăng xuất</a>
-    <a asp-area="Admin" asp-controller="TLoaiSps" asp-action="Index">Danh sách sản phẩm</a>
+    <a asp-area="Admin" asp-controller="TLoaiSps" asp-action="Index" asp-route-area="Admin">Danh sách sản phẩm</a>
+    <a href="/Admin/TLoaiSps/Index">Danh sách sản phẩm</a>
+    <a href="@Url.Action("Index", "TLoaiSps", new { area = "Admin" })">Danh sách sản phẩm</a>
+
     <nav>
         <ul class="nav flex-column">
             <li class="nav-item">
